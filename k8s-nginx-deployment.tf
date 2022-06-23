@@ -10,6 +10,15 @@ resource "kubernetes_deployment" "nginx-deployment" {
   spec {
     replicas = 3
 
+    strategy {
+      type = "RollingUpdate"
+
+      rolling_update {
+        max_surge = 3
+        max_unavailable = 0
+      }
+    }
+
     selector {
       match_labels = {
         run = "nginx-test"
