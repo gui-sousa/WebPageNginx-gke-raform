@@ -10,3 +10,11 @@ provider "google-beta" {
   region      = var.regiao
 
 }
+
+data "google_client_config" "provider" {
+  
+}
+
+provider "kubernetes" {
+  
+}
