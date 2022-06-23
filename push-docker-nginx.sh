@@ -1,14 +1,20 @@
 #!/bin/bash 
 
-#Execute os seguinte comandos para permitir o terminal local
+# Execute os seguinte comandos para permitir o terminal local
+# Substituindo "southamerica-east" pela região correspondente
 
- gcloud auth configure-docker \
-    southamerica-east1-docker.pkg.dev 
+# gcloud auth configure-docker \
+#    southamerica-east1-docker.pkg.dev 
 
-#Coloca TAG na imagem docker a ser enviada
-docker tag guisousa/nginx-hello-world:latest southamerica-east1-docker.pkg.dev/develop-348618/nginx-reppo/guisousa/nginx-hello-world:latest
+#Variaveis
+DOCKER_IMAGE=guisousa/nginx-hello-world:latest
+DOCKER_REPO=southamerica-east1-docker.pkg.dev/develop-348618/nginx-reppo/
 
-#Faz o envio da imagem para o repositorio
-docker push southamerica-east1-docker.pkg.dev/develop-348618/nginx-reppo/guisousa/nginx-hello-world:latest
+#Comando para fazer o tag da imagem com o repositorio
+docker tag "$DOCKER_IMAGE" "$DOCKER_REPO$DOCKER_IMAGE"
 
+#Contatena variaveis do repositorio com imagem
+DOCKER_ENVIA=$DOCKER_REPO$DOCKER_IMAGE
 
+#Encia imagem 
+docker push $DOCKER_ENVIA
