@@ -14,7 +14,7 @@ resource "kubernetes_deployment" "nginx-deployment" {
       type = "RollingUpdate"
 
       rolling_update {
-        max_surge = 3
+        max_surge       = 3
         max_unavailable = 0
       }
     }

@@ -16,7 +16,7 @@ data "google_client_config" "provider" {
 }
 
 provider "kubernetes" {
-  host  = google_container_cluster.cluster-nginx.endpoint
+  host  = "https://${google_container_cluster.cluster-nginx.endpoint}"
   token = data.google_client_config.provider.access_token
 
   client_certificate = base64decode(
