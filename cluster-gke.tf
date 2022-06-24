@@ -3,7 +3,7 @@ resource "google_container_cluster" "cluster-nginx" {
   location = var.zona
   project  = var.projeto
 
-  initial_node_count = 3
+  initial_node_count       = 3
   #remove_default_node_pool = true
 
 }
@@ -16,7 +16,7 @@ resource "google_container_node_pool" "node-pool-nginx" {
 
 
   node_config {
-    #preemptible  = true
+    preemptible  = true
     machine_type = var.tipo-vm
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform"
