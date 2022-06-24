@@ -7,8 +7,10 @@ resource "kubernetes_deployment" "nginx-deployment" {
     }
   }
 
+
   spec {
     replicas = 3
+
 
     strategy {
       type = "RollingUpdate"

@@ -1,8 +1,9 @@
+
 {
   "version": 4,
   "terraform_version": "0.15.5",
-  "serial": 27,
-  "lineage": "4f84b67e-a318-d7cf-909c-4c3fe8501ae9",
+  "serial": 340,
+  "lineage": "b988e08a-b6a2-f9ac-ae55-2ded5f3c3581",
   "outputs": {},
   "resources": [
     {
@@ -14,7 +15,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "access_token": "ya29.c.b0AXv0zTOjL3Rq0-sxX13M2YoFDQZ-PYH117sz6_3DIgNt9SiZmW8_HRTXU_o6qfgyGCzTEPEywJZq685y2wFYqOMHbMOQ4ufMNgsXW3s27rkf2D_ENu0hf7O64TknSUXfx5FRqdG9OMXodmjenZQkJmFBHzFKYB-rkfRcfbxNsQmPA-NL8F8PBlwLTjfebItq2BX-ImnDul3pzl1XLuGYFmyqlzbCjSq6.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................",
+            "access_token": "ya29.c.b0AXv0zTO0S_Ws1WnyA3DsNFNWXtbZErxw2RcZY_jfWYXu_Ika8S4jhh2zVGpN9vSp5wSEhL64506fkbXBwy0rd8OoG8mID893tKp7tjRLtjIrb4OVwJ55a4nfo2PWOIdvFvGKeWAiNjR-EH0oV7OkcY60pEl3EdD0VCDUI9CWMM8vXcF-jryXxKudLy2131nR03Fh4SHdhrd6ZU3VDU5RFDWAgK-iAdST.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................",
             "id": "projects/develop-348618/regions/southamerica-east1/zones/",
             "project": "develop-348618",
             "region": "southamerica-east1",
@@ -33,7 +34,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "create_time": "2022-06-24T19:11:07.602582Z",
+            "create_time": "2022-06-24T17:36:47.644617Z",
             "description": "",
             "format": "DOCKER",
             "id": "projects/develop-348618/locations/southamerica-east1/repositories/nginx-reppo",
@@ -45,7 +46,7 @@
             "project": "develop-348618",
             "repository_id": "nginx-reppo",
             "timeouts": null,
-            "update_time": "2022-06-24T19:11:07.602582Z"
+            "update_time": "2022-06-24T17:36:47.644617Z"
           },
           "sensitive_attributes": [],
           "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH19"
@@ -106,9 +107,9 @@
             "enable_legacy_abac": false,
             "enable_shielded_nodes": true,
             "enable_tpu": false,
-            "endpoint": "35.198.49.120",
+            "endpoint": "34.95.153.16",
             "id": "projects/develop-348618/locations/southamerica-east1-a/clusters/cluster-nginx",
-            "initial_node_count": 3,
+            "initial_node_count": 2,
             "ip_allocation_policy": [],
             "label_fingerprint": "a9dc16a7",
             "location": "southamerica-east1-a",
@@ -131,7 +132,7 @@
                   }
                 ],
                 "client_key": "",
-                "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQUt1bTFaOVFwTUxnZzg3dStYMFR4Tk13RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa1l6STJNalF4TkRJdE5tVXlNaTAwTkRCbUxXRmpaRFF0WlRKaU5XRXhNakJpWmpnegpNQ0FYRFRJeU1EWXlOREU0TVRFd04xb1lEekl3TlRJd05qRTJNVGt4TVRBM1dqQXZNUzB3S3dZRFZRUURFeVJqCk1qWXlOREUwTWkwMlpUSXlMVFEwTUdZdFlXTmtOQzFsTW1JMVlURXlNR0ptT0RNd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FEYmZIbU5qRXRGVG9OYVd0MitHV3FNYkhWT2plU0NvazJtZk50SgpGYmt4NDlKOWh6c2xKWE1YTlQzaTBpOGVuelY3eVNyVnNoVjdjUk9haWFKMmhPVWd6SjdDS2FpbHNtK3VIN2dlCnlIc25DM1ZvUmNqTmhhcE1rQzRBREJOeWRHaGR2OUVnV29VbjFiNEs4RTRaL3g2NTgzTG05WDZRdGI4NkgwcHAKRGRSZFVjVnFrM09Id00zbFhTNXViTHBTd01LUnlwWUFpTWJGOW5ESjBTVnJUQytQR0JpOUpNbXZ0c09hV3g4Ngpwb25JUWpoNE8zRkF1Z1NzWTBMRG5uV1V4YXo0ai80MnFhTDdwQUd1VUlUL3psQVlZeXhOUlQ5b3pSL05ONzR5CjFXTGpCaEMzQ1hLekxyV1dybUJWemtBWC9ocW5NMEFQc3ZwS0VXVGtCSTdoQnVVM1ZBRlRLcEl5OU5SMHFmMS8KTnRsNDhENTBvcFB5YnA3V3pLd1ZjTUNZRlNlV0YzTTZhMVhvR3R0aHM0V20vRm0vSEg1L2RRamtYc3RQUGVEYQpJdW9EMkVzMlVXSlNWbXcxOExZOHFOcUhJcDZVa25kVGszL2JkalBNNmY0WVFVOEkrOXg0WFdWbWxkUHRHd1pSCjdiazRzajdpd0ViNTh4TVVkMXdLQWgvZ1RSRUNBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGUDExSS9BaGRVRTFxNFd5NUlRcEIvSkhST0JPTUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQUkrZnl0Zk5FQXA2NnhuOE9US3RmSHJIYkFRdmNRVk5tQ0taWnBVMGFlCmprZ2VhOTJLMUJQNXVIcjRqaE8vTEpqZTdEWENSYlhpWTdaUGFaTU1XNzNtcmx6WmoybW1WZWRac05xOTF1ajYKbEFvRXplZDMxOENTZnRjWGIwdG5EbmtueCtWeFdPeis0dksyK2NJcTRqbEx4N2d6Qlh0YWd6SDZuUmxyLzUwWgpFYndsWWY2bVhnVVBrSERUVzRlcFp1cGZJV2tWSG5zUERPcmlmd0EveGoyOHNyMXNob05HSWNHT0Y5QjJKeWtZCjBmcE4xNURVMGE4bzJHTmlwNmgwQXlpTHV4c3F2SklkUjJPbGJrY1NrdFRBMEp5aWg3djhsV0UyMVRtb3VLdHIKRzN0MnVZWmhTVWJDaUxaZUQ1b0VsRXo5K3cxUFA1YVhNRXhPOUFjdlhUMXBab2ZMcDd6UHoraVlOWWdIUWM2LwpCQUpyc0pFd2R6Qk85a2p2NzNXV2wydW9RM2hBSWk5WmEwYnBLQVVXeW5xdC9jRUVrUS9UbjdSV3hzODVKR3I3CnZvV2ZacUk5S2RiakZqc09WbFNDQ2RrSWloNUlSTVp3d2tDQ09GU1RkcFUxWjk2Uk1NVkZLaEIrSlpSZGdsSk0KbkVLTldhQzhkOUFiVGN4S3hBYTNQRUE9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+                "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQUw2WFgwQ0RiaElnZEwxbG1qUTVCcWd3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa1pqTTVZelV3TlRZdE5qUXdNUzAwTVdRekxUazJPR0l0T0dGbE1EWmtZekZrTm1JeApNQ0FYRFRJeU1EWXlOREUyTXpZME4xb1lEekl3TlRJd05qRTJNVGN6TmpRM1dqQXZNUzB3S3dZRFZRUURFeVJtCk16bGpOVEExTmkwMk5EQXhMVFF4WkRNdE9UWTRZaTA0WVdVd05tUmpNV1EyWWpFd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FDME1UTC9US25LUWtGcEM1bkd5VWZjbDZwZklvRmorbExIS0xGbApnTkZKQjBrSHp6MEtDUmQ5Sk1DazBvNU5vUTRvdDhJdFdWSEpTRlZnQVYwMEd1Um96TDA4T3IwaEllWlNpalNzCmlTR0FPOFREZ0ZPL0g5ck5UOUcrcWpSanBUdy9STUVjSDNCVjRHL2EvSnBQcXpHM3JNbzRZZDNCN1FlZERlVE4KU3pRNldkVUM0T1hZSzRXNlNxdkZQWTNuamhjWFM4SEFFS1VhbmoxTGFjRW0zcXczUWFKYU1SbGFNTkFBR1NwRAp4UVdteHN0VHRKcXdMRmFqdXdOTTRRNzFpa2d3MTltanRtRDlMQVNMdmpzRFZaV0NmbHhZL1gvZXVla0QyNUZGCko1eWl5VndYbkdINkJyaXhtSVlvU2dpN01DR2VjbkdsUmpqR1lKTDl3V0MxaVcvMU1sdy9rdTh4em9ZVzVXT1cKaHRLQ0kwOHk5MStmb3FkQkhDc2NVd0pTOUdDOS9XN3h6NjFaQXBaOVlIWURCbmlLN2RRSmhUU0NNUmlrY3U4UAo3bU1QcloxZ0RaQUVPRHoybWhtc0pnZ1p1MldvMjRDK0VkU1pqZUE0VTBKR3dDWmFUekN6VkpTT1JJbm52V2dUCi94MWNQNWMyTDdETnQzWTBGRkNjZWtaMEQrc0NBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTVlSclpjdnR5UlpWVWZlZ0Q1ZGkwdEk1L3V0TUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQUlnRkZlUFkxKzZFUE9FVEs4QkZPMVo4ZjJmTWlkaEhnYktHT1VWTWlRClhTSHhvT0JiYWZOUU1TRHdVUXQrTFp4UkRCcFJUUWtCREFRUUFKZkhQSnFaTC9JTkt3K0JPT3JjUkoxVGcrUGkKVFNoYlk3ZHpaSkZJWVNxb25UWmJnNUYrckV2d0dGcHlIR0s1N3h3RVQwd0pOUjl6VXFHcm0ySmNjclVFTlE0cAo1eWIrOGx6QkRHMFVVcVR1N2huTXVHZFBjL2pMcW8zckxUT2FyYU5sMlBieXErNWl4ckxFWTI2alhXTUV3Tk1QCmVpbnk0SUFCaTRTZmxOUk9salNLZkQvNEdXeWNxVk5QM1hVZnFHeWhoeUtvc3ZJWjVJdFRHNzUvUjdhcHcrV2YKTEZXNG9uUDB6ZFdBMFhwNDJMZ1NrcGhQZm44eW5NWUZVVzRoRHpNU0hHRG0xM0NHc3UzWEFmSjBqWDZyTTYzLwpYN2gyK005SHk0bEd6MDVyNk5PVk56aFRMdEkxM2lVUXE5dUFNRVlMZnlQUTRnZUV0TTRKYVcvZW9HdXlDZFZCCkdxWVp1R2Ruek01OEJWYUFiUHRLS2I0akxLOU9jeTRnNGw0UzM5blI2N0dFc1ZrT3QwaE96SnF6aTJaL1pDSU0KU216YjVQOTEwYUoxYXY1OVRmd01MeUk9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
               }
             ],
             "master_authorized_networks_config": [],
@@ -197,12 +198,12 @@
             "node_pool": [
               {
                 "autoscaling": [],
-                "initial_node_count": 3,
+                "initial_node_count": 2,
                 "instance_group_urls": [
-                  "https://www.googleapis.com/compute/v1/projects/develop-348618/zones/southamerica-east1-a/instanceGroupManagers/gke-cluster-nginx-default-pool-2f8ca651-grp"
+                  "https://www.googleapis.com/compute/v1/projects/develop-348618/zones/southamerica-east1-a/instanceGroupManagers/gke-cluster-nginx-default-pool-8dec54a2-grp"
                 ],
                 "managed_instance_group_urls": [
-                  "https://www.googleapis.com/compute/v1/projects/develop-348618/zones/southamerica-east1-a/instanceGroups/gke-cluster-nginx-default-pool-2f8ca651-grp"
+                  "https://www.googleapis.com/compute/v1/projects/develop-348618/zones/southamerica-east1-a/instanceGroups/gke-cluster-nginx-default-pool-8dec54a2-grp"
                 ],
                 "management": [
                   {
@@ -252,7 +253,7 @@
                     "workload_metadata_config": []
                   }
                 ],
-                "node_count": 3,
+                "node_count": 2,
                 "node_locations": [
                   "southamerica-east1-a"
                 ],
@@ -305,11 +306,11 @@
             "id": "projects/develop-348618/locations/southamerica-east1-a/clusters/cluster-nginx/nodePools/node-pool-nginx",
             "initial_node_count": 0,
             "instance_group_urls": [
-              "https://www.googleapis.com/compute/v1/projects/develop-348618/zones/southamerica-east1-a/instanceGroupManagers/gke-cluster-nginx-node-pool-nginx-07add79d-grp"
+              "https://www.googleapis.com/compute/v1/projects/develop-348618/zones/southamerica-east1-a/instanceGroupManagers/gke-cluster-nginx-node-pool-nginx-14e7d231-grp"
             ],
             "location": "southamerica-east1-a",
             "managed_instance_group_urls": [
-              "https://www.googleapis.com/compute/v1/projects/develop-348618/zones/southamerica-east1-a/instanceGroups/gke-cluster-nginx-node-pool-nginx-07add79d-grp"
+              "https://www.googleapis.com/compute/v1/projects/develop-348618/zones/southamerica-east1-a/instanceGroups/gke-cluster-nginx-node-pool-nginx-14e7d231-grp"
             ],
             "management": [
               {
@@ -397,8 +398,8 @@
                 },
                 "name": "nginx-deployment",
                 "namespace": "default",
-                "resource_version": "1788",
-                "uid": "f01b498a-bc51-4b9c-b6bb-d61f7cf9d7b5"
+                "resource_version": "1588",
+                "uid": "5de43ddb-83d2-4dc3-bc9e-40843ffdb534"
               }
             ],
             "spec": [
@@ -537,7 +538,7 @@
         {
           "schema_version": 0,
           "attributes": {
-            "id": "5909957779731431641",
+            "id": "6041628379618392287",
             "triggers": null
           },
           "sensitive_attributes": [],
