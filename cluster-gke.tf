@@ -3,7 +3,7 @@ resource "google_container_cluster" "cluster-nginx" {
   location = var.zona
   project  = var.projeto
 
-  initial_node_count       = 3
+  initial_node_count = 3
   #remove_default_node_pool = true
 
 }

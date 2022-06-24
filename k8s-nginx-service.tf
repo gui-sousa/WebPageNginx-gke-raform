@@ -1,26 +1,26 @@
 resource "kubernetes_service_v1" "nginx-lb" {
-   metadata {
-     name = "nginx-lb"
-     namespace = "default"
-     labels = {
-       run = "nginx-test"
-     }
-   } 
+  metadata {
+    name      = "nginx-lb"
+    namespace = "default"
+    labels = {
+      run = "nginx-test"
+    }
+  }
 
-   spec {
+  spec {
     port {
-      protocol = "TCP"
-      port = 80
-      targetPort = 80
+      protocol    = "TCP"
+      port        = 80
+      target_port = 80
     }
 
     selector = {
       run = "nginx-test"
     }
     type = "LoadBalancer"
-    load_balancer_ip = ""
-   }
-  
+    #load_balancer_ip = ""
+  }
+
   depends_on = [
     kubernetes_deployment.nginx-deployment
   ]
