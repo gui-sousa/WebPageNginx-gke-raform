@@ -5,5 +5,5 @@ resource "google_compute_address" "nginx-lb-ip" {
 
 
 output "url-app" {
-  value = "http://${google_compute_address.nginx-lb-ip.address}"
+  value = "http://${kubernetes_service_v1.nginx-lb.status.0.load_balancer.0.ingress.0.ip}:80"
 }
