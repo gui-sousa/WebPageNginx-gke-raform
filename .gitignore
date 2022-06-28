@@ -10,3 +10,4 @@ crash.*.log
 *.json:Zone.Identifier
 terraform.tfstate
 terraform.tfstate.backup
+log-pipeline.md

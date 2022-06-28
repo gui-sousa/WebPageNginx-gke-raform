@@ -1,0 +1,27 @@
+image: node:16
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: Build and Test
+            caches:
+              - node
+            script:
+              - npm install
+              - npm test
+        - step:
+            name: Code linting
+            script:
+              - npm install eslint
+              - npx eslint .
+            caches:
+              - node
+        - step: 
+            name: Imagem Docker GCLOUD
+            image: google/cloud-sdk:latest
+            script:
+            - echo $GCLOUD_CHAVE > ~/.gcloud-api-key.json
+            - gcloud auth activate-service-account --key-file ~/.gcloud-api-key.json
+            - gcloud container clusters get-credentials cluster-nginx --zone southamerica-east1-a --project develop-348618
+            - kubectl scale deployment nginx-deployment --replicas 2
