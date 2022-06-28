@@ -1,5 +1,5 @@
 variable "tipo-vm" {
-  default = "n2-highcpu-4"
+  default = "e2-micro"
 }
 
 variable "zona" {
