@@ -2,12 +2,14 @@ image: node:16
 
 pipelines:
   default:
-    - parallel:
         - step: 
             name: Imagem Docker GCLOUD
             image: google/cloud-sdk:latest
             script:
             - echo $GCLOUD_CHAVE > ~/.gcloud-api-key.json
             - gcloud auth activate-service-account --key-file ~/.gcloud-api-key.json
+            #SUBSTITUIR POR VARIAVEIS DO AMBIENTE 4BEE
             - gcloud container clusters get-credentials cluster-nginx --zone southamerica-east1-a --project develop-348618
             - kubectl scale deployment nginx-deployment --replicas 2
+            #OPÇÃO PARA REDUZIR O NUMERO DE NÓS
+            #- gcloud container clusters resize cluster-nginx --node-pool node-pool-nginx --num-nodes 2 --zone southamerica-east1-a
